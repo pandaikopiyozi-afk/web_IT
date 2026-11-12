@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UKM IT TECHNOVERSE - Komunitas Belajar Teknologi Mahasiswa</title>
+    <meta name="description" content="Website Resmi UKM IT Kampus TECHNOVERSE. Wadah belajar teknologi, web development, UI/UX, AI, dan Cyber Security untuk mahasiswa pemula.">
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ======================================================================
+         NAVBAR / HEADER
+         ====================================================================== -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <span>TECHNO<span class="text-gradient">VERSE</span></span>
+            </a>
+
+            <!-- Menu Navigasi Desktop & Mobile -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#divisi" class="nav-link">Divisi Belajar</a></li>
+                <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+                <li><a href="#jadwal" class="nav-link">Jadwal</a></li>
+                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                <!-- Tautan halaman pendaftaran khusus untuk mobile -->
+                <li class="mobile-only" style="display: none;">
+                    <a href="daftar.html" class="btn btn-primary btn-sm">Halaman Daftar</a>
+                </li>
+            </ul>
+
+            <!-- Tombol Aksi Navbar -->
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Ubah Tema Gelap/Terang">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- Tombol Buka Modal Pendaftaran -->
+                <button class="btn btn-primary btn-open-modal">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Daftar Sekarang</span>
+                </button>
+
+                <!-- Hamburger Button (Mobile) -->
+                <button class="hamburger" id="hamburger" aria-label="Buka Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================================================================
+         HERO SECTION (BERANDA)
+         ====================================================================== -->
+    <section class="hero" id="beranda">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Open Recruitment Mahasiswa Baru 2026</span>
+                </div>
+                <h1 class="hero-title">
+                    Mulai Langkah Nyata di Dunia <span class="text-gradient">Teknologi Digital</span>
+                </h1>
+                <p class="hero-description">
+                    UKM IT TECHNOVERSE adalah komunitas mahasiswa yang belajar bersama dari nol. Tidak perlu pengalaman koding sebelumnya, yang terpenting adalah semangat belajar dan berkarya!
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-open-modal">
+                        <i class="fa-solid fa-user-plus"></i> Gabung UKM Sekarang
+                    </button>
+                    <a href="#jadwal" class="btn btn-secondary">
+                        <i class="fa-regular fa-calendar-check"></i> Cek Jadwal Belajar
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Anggota Aktif</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4</h3>
+                        <p>Divisi Keahlian</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>30+</h3>
+                        <p>Workshop / Tahun</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Ramah Pemula</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Code Mockup Card -->
+            <div class="hero-visual">
+                <div class="floating-badge badge-1">
+                    <i class="fa-solid fa-rocket"></i>
+                    <div>
+                        <div style="font-weight: 800;">Belajar dari Nol</div>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);">Mentor Ramah & Suportif</span>
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-2">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div>
+                        <div style="font-weight: 800;">Praktik Langsung</div>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);">Bangun Portofolio Nyata</span>
+                    </div>
+                </div>
+
+                <div class="code-mockup">
+                    <div class="mockup-header">
+                        <span class="mockup-dot red"></span>
+                        <span class="mockup-dot yellow"></span>
+                        <span class="mockup-dot green"></span>
+                        <span class="mockup-title">belajar_koding.js</span>
+                    </div>
+                    <div class="mockup-body">
+                        <p><span class="code-comment">// Selamat datang di UKM IT Kampus!</span></p>
+                        <p><span class="code-keyword">const</span> <span class="code-var">mahasiswa</span> = {</p>
+                        <p>&nbsp;&nbsp;nama: <span class="code-str">"Kamu Mahasiswa Keren"</span>,</p>
+                        <p>&nbsp;&nbsp;pengalamanAwal: <span class="code-str">"Nol Pengalaman (Pemula)"</span>,</p>
+                        <p>&nbsp;&nbsp;semangatBelajar: <span class="code-keyword">true</span>,</p>
+                        <p>&nbsp;&nbsp;divisiFavorit: [<span class="code-str">"Web Dev"</span>, <span class="code-str">"UI/UX"</span>, <span class="code-str">"Cyber"</span>]</p>
+                        <p>};</p>
+                        <br>
+                        <p><span class="code-keyword">function</span> <span class="code-func">kembangkanPotensi</span>(<span class="code-var">mhs</span>) {</p>
+                        <p>&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-str">`🚀 Siap menjadi Tech Innovator hebat!`</span>;</p>
+                        <p>}</p>
+                        <br>
+                        <p><span class="code-func">console</span>.<span class="code-func">log</span>(<span class="code-func">kembangkanPotensi</span>(<span class="code-var">mahasiswa</span>));</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION: TENTANG KAMI & KEUNTUNGAN BERGABUNG
+         ====================================================================== -->
+    <section class="why-join-section" id="tentang">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-heart"></i> Mengapa Bergabung?</span>
+                <h2 class="section-title">Kembangkan Minat IT Bersama Komunitas yang Suportif</h2>
+                <p class="section-desc">
+                    Kamu tidak perlu minder jika belum pernah koding. Di sini kita belajar step-by-step dengan kurikulum yang mudah dipahami.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>Kurikulum Khusus Pemula</h4>
+                    <p>Materi pembelajaran disusun bertahap dari pemahaman konsep dasar logika hingga praktik membuat aplikasi nyata.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h4>Mentoring Mahasiswa Senior</h4>
+                    <p>Dibimbing langsung oleh kakak tingkat berprestasi dan alumni yang sudah berkarir di industri startup dan tech company.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h4>Kompetisi & Hackathon</h4>
+                    <p>Dukungan penuh tim untuk mengikuti ajang lomba seperti Gemastik, Hackathon Kampus, dan kompetisi inovasi digital.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h4>Portofolio & Sertifikat</h4>
+                    <p>Setiap akhir semester kamu akan menyelesaikan proyek akhir yang siap dipajang di LinkedIn dan CV profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION: DIVISI / PEMINATAN BELAJAR
+         ====================================================================== -->
+    <section class="divisions-section" id="divisi">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-layer-group"></i> Divisi Belajar</span>
+                <h2 class="section-title">Pilih Peminatan Sesuai Minat dan Bakatmu</h2>
+                <p class="section-desc">
+                    Tersedia 4 divisi keahlian teknologi yang relevan dengan kebutuhan industri masa kini.
+                </p>
+            </div>
+
+            <div class="divisions-grid">
+                <!-- Divisi 1: Web Development -->
+                <div class="division-card">
+                    <div class="card-icon icon-web">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Mempelajari cara membangun website interaktif dan aplikasi berbasis web dari tampilan antarmuka hingga database server.</p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Divisi 2: AI & Python Data -->
+                <div class="division-card">
+                    <div class="card-icon icon-ai">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3>Python & AI Dasar</h3>
+                    <p>Belajar logika pemrograman bahasa Python, analisis data sederhana, dan pengenalan konsep kecerdasan buatan (Machine Learning).</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Data Science</span>
+                        <span>OpenCV</span>
+                        <span>AI Prompts</span>
+                    </div>
+                </div>
+
+                <!-- Divisi 3: UI/UX Design -->
+                <div class="division-card">
+                    <div class="card-icon icon-design">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Mendesain tampilan aplikasi yang estetik, ramah pengguna, riset kebutuhan user, membuat wireframe, dan prototype interaktif.</p>
+                    <div class="tech-tags">
+                        <span>Figma</span>
+                        <span>Design System</span>
+                        <span>User Research</span>
+                        <span>Wireframing</span>
+                    </div>
+                </div>
+
+                <!-- Divisi 4: Cyber Security & Jaringan -->
+                <div class="division-card">
+                    <div class="card-icon icon-cyber">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Cyber Security & Network</h3>
+                    <p>Mendalami keamanan siber dasar, konfigurasi jaringan komputer, sistem operasi Linux, serta ethical hacking beretika.</p>
+                    <div class="tech-tags">
+                        <span>Linux</span>
+                        <span>Cisco</span>
+                        <span>Ethical Hacking</span>
+                        <span>Wireshark</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION: INFORMASI KEGIATAN & WORKSHOP
+         ====================================================================== -->
+    <section class="activities-section" id="kegiatan">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-solid fa-bullhorn"></i> Informasi Agenda</span>
+                <h2 class="section-title">Kegiatan Seru & Pelatihan Terbaru</h2>
+                <p class="section-desc">
+                    Ikuti workshop interaktif, sharing session bersama praktisi, dan kompetisi koding seru yang kami selenggarakan secara rutin.
+                </p>
+            </div>
+
+            <!-- Tombol Filter Interaktif Kategori -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Semua Agenda</button>
+                <button class="filter-btn" data-category="workshop">Workshop</button>
+                <button class="filter-btn" data-category="webinar">Webinar</button>
+                <button class="filter-btn" data-category="hackathon">Hackathon</button>
+            </div>
+
+            <!-- Daftar Kartu Kegiatan -->
+            <div class="activities-grid">
+                <!-- Kegiatan 1: Workshop Web -->
+                <article class="activity-card" data-category="workshop">
+                    <div class="activity-badge-container" style="background: linear-gradient(135deg, #1e1b4b, #3b82f6);">
+                        <div class="activity-pattern"></div>
+                        <i class="fa-solid fa-code"></i>
+                        <span class="activity-category-tag">Workshop</span>
+                        <span class="activity-status-tag">Buka Pendaftaran</span>
+                    </div>
+                    <div class="activity-body">
+                        <div class="activity-date">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Sabtu, 24 Oktober 2026 | 09.00 - 12.00 WIB</span>
+                        </div>
+                        <h3 class="activity-title">Bikin Website Pribadi dari Nol dengan HTML & CSS Modern</h3>
+                        <p class="activity-desc">
+                            Praktik langsung membuat landing page portofolio keren yang langsung bisa di-onlinekan ke GitHub Pages.
+                        </p>
+                        <div class="activity-meta">
+                            <div class="speaker-info">
+                                <div class="speaker-avatar">AR</div>
+                                <span class="speaker-name">Ahmad Rayhan (Frontend Lead)</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm btn-open-modal">Daftar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kegiatan 2: Webinar Karir -->
+                <article class="activity-card" data-category="webinar">
+                    <div class="activity-badge-container" style="background: linear-gradient(135deg, #311042, #9333ea);">
+                        <div class="activity-pattern"></div>
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        <span class="activity-category-tag">Webinar</span>
+                        <span class="activity-status-tag">Live via Zoom</span>
+                    </div>
+                    <div class="activity-body">
+                        <div class="activity-date">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Rabu, 28 Oktober 2026 | 19.30 - 21.00 WIB</span>
+                        </div>
+                        <h3 class="activity-title">Roadmap Menjadi Software Engineer untuk Mahasiswa Baru</h3>
+                        <p class="activity-desc">
+                            Tips dan strategi menyusun portofolio serta persiapan magang di perusahaan teknologi terkemuka sejak semester awal.
+                        </p>
+                        <div class="activity-meta">
+                            <div class="speaker-info">
+                                <div class="speaker-avatar">DS</div>
+                                <span class="speaker-name">Dina Salsabila (Software Eng. GoTo)</span>
+                            </div>
+                            <button class="btn btn-secondary btn-sm btn-open-modal">Ikuti</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kegiatan 3: Hackathon -->
+                <article class="activity-card" data-category="hackathon">
+                    <div class="activity-badge-container" style="background: linear-gradient(135deg, #064e3b, #10b981);">
+                        <div class="activity-pattern"></div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span class="activity-category-tag">Hackathon</span>
+                        <span class="activity-status-tag">Total Hadiah 5 Juta</span>
+                    </div>
+                    <div class="activity-body">
+                        <div class="activity-date">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>7 - 8 November 2026 | 24 Jam Non-Stop</span>
+                        </div>
+                        <h3 class="activity-title">TECHNOVERSE Campus Hackathon: Solusi Cerdas Kampus Hijau</h3>
+                        <p class="activity-desc">
+                            Ajang lomba kolaborasi tim lintas divisi untuk membuat prototype solusi digital inovatif bagi lingkungan kampus.
+                        </p>
+                        <div class="activity-meta">
+                            <div class="speaker-info">
+                                <div class="speaker-avatar">TC</div>
+                                <span class="speaker-name">Tim Juri UKM IT & Dosen</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm btn-open-modal">Gabung Tim</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kegiatan 4: Workshop UI/UX -->
+                <article class="activity-card" data-category="workshop">
+                    <div class="activity-badge-container" style="background: linear-gradient(135deg, #78350f, #f59e0b);">
+                        <div class="activity-pattern"></div>
+                        <i class="fa-solid fa-bezier-curve"></i>
+                        <span class="activity-category-tag">Workshop</span>
+                        <span class="activity-status-tag">Buka Pendaftaran</span>
+                    </div>
+                    <div class="activity-body">
+                        <div class="activity-date">
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>Sabtu, 14 November 2026 | 13.00 - 16.00 WIB</span>
+                        </div>
+                        <h3 class="activity-title">Mastering Figma: Desain Antarmuka Mobile App Estetik</h3>
+                        <p class="activity-desc">
+                            Belajar prinsip visual hierarki, tipografi, auto-layout, dan cara membuat interactive clickable prototype.
+                        </p>
+                        <div class="activity-meta">
+                            <div class="speaker-info">
+                                <div class="speaker-avatar">KP</div>
+                                <span class="speaker-name">Kevin Pratama (UI/UX Designer)</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm btn-open-modal">Daftar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION: JADWAL BELAJAR RUTIN MINGGUAN
+         ====================================================================== -->
+    <section class="schedule-section" id="jadwal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fa-regular fa-calendar-days"></i> Jadwal Rutin</span>
+                <h2 class="section-title">Jadwal Kelas Belajar Mingguan</h2>
+                <p class="section-desc">
+                    Pilih sesi belajar yang sesuai dengan waktu luangmu. Seluruh sesi diselenggarakan di Lab Komputer Kampus dan disiarkan hybrid.
+                </p>
+            </div>
+
+            <!-- Tab Kategori Divisi Jadwal -->
+            <div class="schedule-tabs">
+                <button class="schedule-tab-btn active" data-divisi="all">Semua Sesi</button>
+                <button class="schedule-tab-btn" data-divisi="web">Web Development</button>
+                <button class="schedule-tab-btn" data-divisi="python">Python & AI</button>
+                <button class="schedule-tab-btn" data-divisi="design">UI/UX Design</button>
+                <button class="schedule-tab-btn" data-divisi="cyber">Cyber Security</button>
+            </div>
+
+            <!-- Daftar Jadwal Item -->
+            <div class="schedule-card-wrapper">
+                <!-- Sesi 1: Web -->
+                <div class="schedule-item" data-divisi="web">
+                    <div class="schedule-time">
+                        <span class="time-badge">15.30 - 17.30 WIB</span>
+                        <span class="day-badge"><i class="fa-regular fa-clock"></i> Setiap Senin</span>
+                    </div>
+                    <div class="schedule-details">
+                        <h4>Kelas Dasar Web: HTML & CSS Flexbox/Grid</h4>
+                        <p>Mempelajari fondasi struktur website, responsive styling, dan trik tata letak modern.</p>
+                    </div>
+                    <div class="schedule-location">
+                        <i class="fa-solid fa-location-dot"></i> Lab Komputer 3 (Gedung B)
+                    </div>
+                </div>
+
+                <!-- Sesi 2: Python -->
+                <div class="schedule-item" data-divisi="python">
+                    <div class="schedule-time">
+                        <span class="time-badge">16.00 - 18.00 WIB</span>
+                        <span class="day-badge"><i class="fa-regular fa-clock"></i> Setiap Selasa</span>
+                    </div>
+                    <div class="schedule-details">
+                        <h4>Logika Pemrograman Dasar Python & Algoritma</h4>
+                        <p>Pengenalan sintaks Python, fungsi, percabangan logika, dan manipulasi data sederhana.</p>
+                    </div>
+                    <div class="schedule-location">
+                        <i class="fa-solid fa-location-dot"></i> Lab Jaringan (Gedung C)
+                    </div>
+                </div>
+
+                <!-- Sesi 3: UI/UX -->
+                <div class="schedule-item" data-divisi="design">
+                    <div class="schedule-time">
+                        <span class="time-badge">15.45 - 17.45 WIB</span>
+                        <span class="day-badge"><i class="fa-regular fa-clock"></i> Setiap Kamis</span>
+                    </div>
+                    <div class="schedule-details">
+                        <h4>Studio Desain Produk Digital: Figma & Wireframing</h4>
+                        <p>Praktik bedah studi kasus aplikasi populer dan mendesain ulang antarmuka yang ramah pengguna.</p>
+                    </div>
+                    <div class="schedule-location">
+                        <i class="fa-solid fa-location-dot"></i> Coworking Space Kampus
+                    </div>
+                </div>
+
+                <!-- Sesi 4: Cyber Security -->
+                <div class="schedule-item" data-divisi="cyber">
+                    <div class="schedule-time">
+                        <span class="time-badge">16.00 - 18.00 WIB</span>
+                        <span class="day-badge"><i class="fa-regular fa-clock"></i> Setiap Jumat</span>
+                    </div>
+                    <div class="schedule-details">
+                        <h4>Fundamental Keamanan Jaringan & Dasar Perintah Linux</h4>
+                        <p>Eksplorasi terminal Linux, pemahaman protokol TCP/IP, dan keamanan data dasar.</p>
+                    </div>
+                    <div class="schedule-location">
+                        <i class="fa-solid fa-location-dot"></i> Lab Riset Cyber (Gedung A)
+                    </div>
+                </div>
+
+                <!-- Sesi 5: Web Lanjutan -->
+                <div class="schedule-item" data-divisi="web">
+                    <div class="schedule-time">
+                        <span class="time-badge">09.30 - 12.00 WIB</span>
+                        <span class="day-badge"><i class="fa-regular fa-clock"></i> Setiap Sabtu</span>
+                    </div>
+                    <div class="schedule-details">
+                        <h4>Project Jam: Bikin Web Interaktif dengan JavaScript</h4>
+                        <p>Sesi kolaborasi ngoding bareng mentor untuk menyelesaikan mini project mingguan.</p>
+                    </div>
+                    <div class="schedule-location">
+                        <i class="fa-solid fa-video"></i> Hybrid (Lab 3 + Zoom)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION: CALL TO ACTION (CTA)
+         ====================================================================== -->
+    <section class="cta-section" id="daftar">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Siap Belajar Koding & Gabung Bersama Kami?</h2>
+                <p>
+                    Kesempatan emas bagi kamu yang ingin mendalami teknologi digital tanpa takut tertinggal. Kuota pendaftaran terbatas untuk tiap divisi demi efektivitas mentoring!
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-white btn-open-modal">
+                        <i class="fa-solid fa-paper-plane"></i> Daftar Cepat Sekarang
+                    </button>
+                    <a href="daftar.html" class="btn btn-outline-white">
+                        <i class="fa-solid fa-file-pen"></i> Form Pendaftaran Lengkap
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         FOOTER & KONTAK
+         ====================================================================== -->
+    <footer class="footer" id="kontak">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Info Brand -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span>TECHNO<span class="text-gradient">VERSE</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Unit Kegiatan Mahasiswa bidang Teknologi Informasi kampus. Wadah kreatif, kolaboratif, dan edukatif untuk mencetak talenta digital berprestasi.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigasi Cepat -->
+                <div class="footer-col">
+                    <h4>Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#tentang">Tentang UKM</a></li>
+                        <li><a href="#divisi">Divisi Belajar</a></li>
+                        <li><a href="#kegiatan">Agenda Kegiatan</a></li>
+                        <li><a href="#jadwal">Jadwal Kelas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Divisi Belajar -->
+                <div class="footer-col">
+                    <h4>Peminatan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#divisi">Web Development</a></li>
+                        <li><a href="#divisi">Python & Data AI</a></li>
+                        <li><a href="#divisi">UI/UX Design</a></li>
+                        <li><a href="#divisi">Cyber Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak Sekretariat -->
+                <div class="footer-col">
+                    <h4>Sekretariat</h4>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Gedung Student Center Lt. 2, Ruang UKM IT, Kampus Terpadu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>kontak@technoverse-ukm.id</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+62 812-3456-7890 (Admin Pendaftaran)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 UKM IT TECHNOVERSE. Dibuat dengan cinta menggunakan HTML, CSS, dan JavaScript untuk Mahasiswa Pemula.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         MODAL POPUP FORMULIR PENDAFTARAN CEPAT
+         ====================================================================== -->
+    <div class="modal-overlay" id="registration-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Tutup Formulir">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-header">
+                <span class="section-badge"><i class="fa-solid fa-sparkles"></i> Pendaftaran Calon Anggota</span>
+                <h3 class="modal-title">Gabung UKM IT Sekarang</h3>
+                <p class="modal-subtitle">Isi data singkat berikut untuk bergabung ke grup mentoring calon anggota baru.</p>
+            </div>
+
+            <form class="registration-form" id="quick-registration-form">
+                <div class="form-group">
+                    <label class="form-label" for="m-nama">Nama Lengkap <span class="req">*</span></label>
+                    <input type="text" id="m-nama" name="nama" class="form-control" placeholder="Contoh: Budi Pratama" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="m-nim">NIM Mahasiswa <span class="req">*</span></label>
+                        <input type="text" id="m-nim" name="nim" class="form-control" placeholder="Contoh: 2026010045" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="m-semester">Semester Saat Ini <span class="req">*</span></label>
+                        <select id="m-semester" name="semester" class="form-control" required>
+                            <option value="">Pilih Semester</option>
+                            <option value="1">Semester 1 (Maba)</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5+">Semester 5 ke atas</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="m-email">Email Aktif <span class="req">*</span></label>
+                        <input type="email" id="m-email" name="email" class="form-control" placeholder="nama@kampus.ac.id" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="m-whatsapp">No. WhatsApp <span class="req">*</span></label>
+                        <input type="tel" id="m-whatsapp" name="whatsapp" class="form-control" placeholder="08xxxxxxxxxx" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="m-divisi">Pilihan Divisi Peminatan <span class="req">*</span></label>
+                    <select id="m-divisi" name="divisi" class="form-control" required>
+                        <option value="">-- Pilih Divisi yang Diinginkan --</option>
+                        <option value="web">Web Development (Frontend & Backend)</option>
+                        <option value="python">Python, Data & Artificial Intelligence</option>
+                        <option value="design">UI/UX Product Design (Figma)</option>
+                        <option value="cyber">Cyber Security & Jaringan Komputer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="m-alasan">Alasan Tertarik Bergabung</label>
+                    <textarea id="m-alasan" name="alasan" class="form-control" placeholder="Ceritakan motivasimu belajar teknologi (misal: ingin bikin website sendiri)"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.5rem;">
+                    <i class="fa-solid fa-paper-plane"></i> Kirim Formulir Pendaftaran
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script Utama -->
+    <script src="js/script.js"></script>
+</body>
+</html>
